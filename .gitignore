@@ -27,6 +27,9 @@ schema.graphql
 *.tes.text
 /.tes.text
 /tes.text
+*.wp-config.php
+/.wp-config.php
+/wp-config.php
 
 
 # misc
