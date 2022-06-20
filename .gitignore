@@ -1,48 +1,56 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Configuration
-wp-config.php
+# testing
+/coverage
 
-# Example themes
-/wp-content/themes/twenty*/
+#amplify
+/amplify
 
-# Example plugin
-/wp-content/plugins/hello.php
+#schema
+schema.graphql
 
-# Uploads
-/wp-content/uploads/
+#aws-exports
+/src/configs/aws-exports.js
 
-# Log files
-*.log
+#aws_creds
+/src/middleware/cdoctor/encryptionPDF/aws_creds.js
 
-# htaccess
-/.htaccess
+# production
+/build
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#amplify-do-not-edit-begin
+amplify/\#current-cloud-backend
+amplify/.config/local-*
+amplify/logs
+amplify/mock-data
+amplify/backend/amplify-meta.json
+amplify/backend/.temp
+build/
+dist/
+node_modules/
+aws-exports.js
+awsconfiguration.json
+amplifyconfiguration.json
+amplifyconfiguration.dart
+amplify-build-config.json
+amplify-gradle-config.json
+amplifytools.xcconfig
+.secret-*
+**.sample
+#amplify-do-not-edit-end
