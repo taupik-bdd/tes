@@ -27,7 +27,7 @@ define('DB_NAME', 'web_domibed_2');
 define('DB_USER', 'admin');
 
 /** Database password */
-define('DB_PASSWORD', '123123*22***');
+define('DB_PASSWORD', '123123*24542***');
 
 /** Database hostname */
 define('DB_HOST', 'localhost');
