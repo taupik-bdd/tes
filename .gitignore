@@ -24,10 +24,7 @@ schema.graphql
 
 # production
 /build
-.tes
-tes
-*.tes.text
-tes.text
+*. tes.text
 
 
 # misc
